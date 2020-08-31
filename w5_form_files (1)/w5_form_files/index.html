@@ -13,7 +13,308 @@
     <title>Week 5 | Tables and Forms</title>
 </head>
 <body>
+
+    <h1>Birthday Party Registration Form</h1>       <!--main heading-->
+
+<div id="wrapper">
+
     <!--Build your Table and Form here-->
-    
-</body>
-</html>
+
+    <table>         <!--beginning of table-->
+
+        <thead>     <!--table head-->
+
+            <tr>    <!--table row/column headers-->
+                
+
+                <td>Labels</td>
+                <td>Form Fields</td>
+
+            </tr>   <!--end of table row[column headers]-->
+
+        </thead>    <!--end of table head-->
+
+        <tbody>         <!--beginning of table body-->
+
+            <tr>        <!--beginning of first row-->
+
+                <td>    <!--beginning the first part of form-->
+                               
+                    <form method="GET" action="confirm.html">       <!--form method-->
+                        
+                        <label for="gfirst">Parent/Guardian Name    <!--label for gfirst-->
+
+                            <td><input type="text" required name="gfirst" id="g-first" placeholder="First Name" maxlength="20" >
+                            
+                                <br>                                <!--to separate lines-->
+
+                                <input type="text" required name="gfirst" id="g-last" placeholder="Last Name" maxlength="20">
+
+                            </td>   <!--end of fi>rst and last name fields-->    
+
+                        </label>    <!--end of gfirst label-->  
+
+                </td>     <!--end of first part of form-->  
+
+            </tr>         <!--end of first row-->     
+                       
+                
+            <tr>          <!--second row start-->
+
+                <td>      <!--second row data-->
+
+                        <label for="cfirst">Child's First Name      <!--label for cfirst-->
+
+                            <td>
+
+                                <input type="text" required name="cfirst" id="c-first" placeholder="Childs First Name"/>
+
+                            </td>   <!--end input data-->
+
+                        </label> <!--end of cfirst label-->   
+
+                </td>    <!--end of second row data-->
+
+            </tr>   <!--end of second row-->
+
+            <tr>        <!--third row start-->
+
+                <td>    <!--third row data-->
+                    
+                        <label for="age">Child's Age
+
+                            <td>
+                                
+                                <input type="number" required name="age" value="3">
+                            
+                            </td>   <!--end of data-->
+
+                        </label>    <!--end of age label-->
+                        
+                </td>   <!--end of third row data-->
+
+            </tr>       <!--end of third row-->
+            
+            <tr>        <!--new portion of form created 1-->
+            
+               <td>     <!--fourth row data-->
+
+                    <h2>Date and Time</h2>     
+                   
+               </td>    <!--end of fourth row Data-->
+
+               <td>     <!--spaceholder data-->
+
+                   <!--for styling purposes-->
+
+               </td>    <!--end of spaceholder data-->
+
+            </tr>       <!--end of new portion of form 1-->
+
+            <tr>        <!--fifth row starts-->
+
+                <td>    <!--fifth row data starts-->
+
+                    <label for="date">Date  
+
+                        <td><input type="date" required name="date"/></td>
+
+                    </label>    <!--label for date ends-->
+                    
+                </td>   <!--fifth row data ends-->
+
+            </tr>   <!--fifth row ends-->
+
+            <tr>    <!--sixth row begins-->
+
+                <td>    <!--sixth row data starts-->
+
+                    <label for="time">Start Time
+
+                        <td><input type="time" required name="time"/></td>
+
+                    </label>    <!--end of start time label-->
+
+                </td>   <!--sixth row data ends-->
+
+            </tr>       <!--sixth row ends-->
+
+            <tr>        <!--seventh row starts-->
+
+                <td>    <!--seventh row data starts-->
+
+                    <label for="guests">Number of Guests
+
+                        <td><input type="number" name="guests" value="5"/></td>
+
+                    </label>    <!--guest label ends-->
+
+                </td>   <!--seventh row data ends-->
+
+            </tr>       <!--seventh row ends-->
+
+            <tr>        <!--new portion of form created 2-->
+            
+                <td>     <!-- row data-->
+ 
+                    <h2>Food</h2>     
+                    
+                </td>    <!--end of  row Data-->
+ 
+            </tr>       <!--end of new portion of form 2-->
+            
+            <tr>        <!--eighth row starts-->
+            
+                <td>     <!--eighth row data-->
+ 
+                   <label for="size">Size
+
+                        <td><input type="radio" name="size" value="sm"/>sm
+                            <input type="radio" name="size" value="med"/>med
+                            <input type="radio" name="size" value="lg"/>lg
+                        </td>
+                    
+                   </label>
+                    
+                </td>    <!--end of eighth row data-->
+            
+            </tr>       <!--end of eighth row-->
+
+                <tr>    <!--ninth row starts-->
+
+                    <td>    <!--ninth row data starts-->
+
+                        <label for="drinks">Drinks   <!--label for drinks-->
+
+                           <!--input for drink selections begins table data--> 
+
+                            <td><input type="checkbox" required name="drink1" checked="true" value="coke"/>
+                                
+                                <label for="drink1">Coke</label><br>
+                                                                                    
+                                <input type="checkbox"  required name="drink2" value="sprite"/>
+                                
+                                <label for="drink2">Sprite<label><br>      
+                                        
+                                <input type="checkbox" required name="drink3" value="fruit punch"/>
+                                
+                                <label for="drink3">fruit punch<label><br>
+
+                                <input type="checkbox" required name="drink4"  value="lemonade"/>
+                                
+                                <label for="drink4">lemonade<label><br>
+
+                                <input type="checkbox" required name="drink5" value="iced tea"/>
+                                
+                                <label for="drink5">iced tea<label><br>
+
+                            </td>   <!--end of drink selections table data-->    
+
+                        </label>    <!--end of drinks label-->  
+
+                    </td>   <!--ninth row data ends-->
+
+                </tr>       <!--ninth row ends-->
+
+                <tr>        <!--tenth row starts-->
+
+                    <td>    <!--tenth row data starts-->
+                    
+                        <label for="cake">Cake
+
+                            <td>    <!--to begin a new line with selections-->
+
+                                <select name="cake">
+
+                                    <option>Vanilla</option>
+                                    <option>Chocolate</option>
+                                    <option>I'll bring my own</option>
+
+                                </select>   <!--end of select cake-->
+
+                            </td>   <!--end of new line with selections-->
+
+                        </label>    <!--end of cake label-->
+
+                    </td>   <!--end of tenth row data-->
+
+                </tr>       <!--end of tenth row-->
+
+ 
+                <tr>    <!--new portion of form created 4-->
+
+                    <td>    <!--decorations label begins-->
+
+                        <h2>Decorations</h2>  
+
+                    </td>   <!--decorations label ends-->
+                  
+                    <td>     <!--spaceholder data-->
+
+                        <!--for styling purposes-->
+
+                    </td>    <!--end of spaceholder data-->
+
+                </tr>   <!--end of new portion of form 4-->
+
+                <tr>    <!--eleventh row starts-->
+
+                    <td>    <!--eleventh row data starts-->
+
+                        <label for="colors">Color Scheme</label>                    
+
+                    </td>   <!--eleventh row data ends-->
+
+                    <td>    <!--eleventh row data starts 1-->
+                        
+                        <input type="color" name="colors">
+
+                    </td>   <!--eleventh row data ends 1-->
+
+                </tr>   <!--eleventh row ends-->
+
+                <tr>    <!--twelfth row starts-->
+
+                    <td>    <!--twelfth row data-->
+
+                        <label for="comments" name="comments">Additional Comments</label>
+
+                    </td>   <!--end of twelfth row data-->
+
+                    <br>
+
+                    <td>    <!--start of twelfth row data 1-->
+                        
+                        <textarea>Please add any additional comments here</textarea>
+
+                    </td>   <!--end of twelfth row data 2-->
+                
+                </tr>   <!--twelfth row ends-->
+
+                <tr>    <!--final row starts-->
+
+                    <td>     <!--spaceholder data-->
+
+                        <!--for styling purposes-->
+
+                    </td>    <!--end of spaceholder data-->
+
+                    <td>    <!--final row data starts-->
+
+                        <input type="submit" value="Submit"/>
+
+                    </td>   <!--final row data ends-->
+
+                </tr>   <!--final row ends-->
+
+            </form> <!--end of form-->
+                
+        </tbody> <!--end of table body-->
+
+    </table> <!--end of table-->
+
+</div> <!--end of wrapper div-->
+
+</body> <!--end of body element-->
+
+</html> <!--end of html code-->
