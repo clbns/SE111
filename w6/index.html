@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Shannon Cooper">
+        <meta name="description" content="Week 6 - JavaScript Pay Calculator">
+        <meta name="date" content="August 30, 2020">
+
+        <title>Pay Calculator</title>       
+
+    </head> <!--end of head-->
+
+    <body>
+
+        <h1>Pay Calculator - Week 6</h1>
+
+        <script>    //begin using JavaScript
+
+            //declare variables and prompt user for information to calculate
+
+            var payRate = prompt(`Enter Your Pay Rate: `)
+            var hoursWorked = prompt(`Enter Number of Hours Worked: `)
+            var taxRate = .20 
+            
+            //convert string values to numbers for math
+
+            var pay = Number(payRate)
+            var hours = Number(hoursWorked)
+
+            /*declare calculation variables to display and
+            convert monetary values to round to two decimals*/
+
+            var grossPay = payRate * hoursWorked * 2
+            var taxesPaid = grossPay * taxRate
+            var netPay = grossPay - taxesPaid
+
+            var gross = grossPay.toFixed(2)
+            var tax = taxesPaid.toFixed(2)
+            var net = netPay.toFixed(2)
+
+            //display results of users gross pay/taxes paid/net pay to the user and on the console
+            
+            alert(`Gross Pay: $${gross}\n Uncle Sam's Share: $${tax}\n Net Pay: $${net}`)
+
+            console.log(`Gross Pay: $${gross}`)
+            console.log(`Uncle Sam's Share: $${tax}`)
+            console.log(`Net Pay: $${net}`)
+
+        </script>   <!--end using JavaScript-->
+
+    </body> <!--end of body-->
+   
+    </html> <!--End of html document-->
