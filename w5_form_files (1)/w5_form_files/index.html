@@ -21,11 +21,8 @@
     <!--Build your Table and Form here-->
 
     <table>         <!--beginning of table-->
-
         <thead>     <!--table head-->
-
-            <tr>    <!--table row/column headers-->
-                
+            <tr>    <!--table row/column headers-->             
 
                 <td>Labels</td>
                 <td>Form Fields</td>
@@ -36,45 +33,43 @@
 
         <tbody>         <!--beginning of table body-->
 
-            <tr>        <!--beginning of first row-->
-
-                <td>    <!--beginning the first part of form-->
-                               
-                    <form method="GET" action="confirm.html">       <!--form method-->
+            <form method="GET" action="confirm.html">       <!--form method-->
+            
+                <tr>        <!--beginning of first row-->
+                    
+                    <td>    <!--beginning the first part of form-->     
+                        
                         
                         <label for="gfirst">Parent/Guardian Name    <!--label for gfirst-->
 
                             <td>
-                                <input type="text" required name="gfirst" id="g-first" placeholder="First Name" maxlength="20" >
+                                <input type="text" required name="gfirst" id="g-first" placeholder="First Name" maxlength="20">
                             
                                 <br>                                <!--to separate lines-->
 
                                 <input type="text" required name="gfirst" id="g-last" placeholder="Last Name" maxlength="20">
 
                             </td>   <!--end of first and last name fields-->    
-
                         </label>    <!--end of gfirst label-->  
+                        
+                    </td>     <!--end of first part of form-->  
 
-                    </form>
-
-                </td>     <!--end of first part of form-->  
-
-            </tr>         <!--end of first row-->     
+                </tr>         <!--end of first row-->     
                        
                 
             <tr>          <!--second row start-->
 
                 <td>      <!--second row data-->
 
-                    <label for="cfirst">Child's First Name      <!--label for cfirst-->
+                        <label for="cfirst">Child's First Name      <!--label for cfirst-->
 
-                        <td>
+                            <td>
 
-                            <input type="text" required name="cfirst" id="c-first" placeholder="Childs First Name"/>
+                                <input type="text" required name="cfirst" id="c-first" placeholder="Childs First Name"/>
 
-                        </td>   <!--end input data-->
+                            </td>   <!--end input data-->
 
-                    </label> <!--end of cfirst label-->   
+                        </label> <!--end of cfirst label-->   
 
                 </td>    <!--end of second row data-->
 
